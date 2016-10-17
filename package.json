@@ -1,0 +1,25 @@
+{
+  "name": "canvas-data-warehouse",
+  "version": "1.0.0",
+  "description": "Middleware for cloning Canvas Data resources to a Postgres DB.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/neurotech/canvas-data-warehouse.git"
+  },
+  "keywords": [
+    "canvas"
+  ],
+  "author": "Tim Douglas",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/neurotech/canvas-data-warehouse/issues"
+  },
+  "homepage": "https://github.com/neurotech/canvas-data-warehouse#readme",
+  "dependencies": {
+    "conf": "0.11.2"
+  }
+}
