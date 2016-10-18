@@ -5,13 +5,13 @@ const schema = require('./lib/schema');
 const manifest = require('./lib/manifest');
 
 test('Valid config', t => {
-  t.is(typeof config.api.url, 'string', 'url OK');
-  t.is(typeof config.api.key, 'string', 'key OK');
-  t.is(typeof config.api.secret, 'string', 'secret OK');
-  t.is(typeof config.db.host, 'string', 'host OK');
-  t.is(typeof config.db.port, 'number', 'port OK');
-  t.is(typeof config.db.user, 'string', 'user OK');
-  t.is(typeof config.db.password, 'string', 'password OK');
+  t.is(typeof config.get('api.url'), 'string', 'url OK');
+  t.is(typeof config.get('api.key'), 'string', 'key OK');
+  t.is(typeof config.get('api.secret'), 'string', 'secret OK');
+  t.is(typeof config.get('db.host'), 'string', 'host OK');
+  t.is(typeof config.get('db.port'), 'number', 'port OK');
+  t.is(typeof config.get('db.user'), 'string', 'user OK');
+  t.is(typeof config.get('db.password'), 'string', 'password OK');
 });
 
 test('GET /schema/latest', async t => {
