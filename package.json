@@ -20,7 +20,8 @@
   },
   "homepage": "https://github.com/neurotech/canvas-data-warehouse#readme",
   "dependencies": {
-    "got": "^6.5.0"
+    "got": "^6.5.0",
+    "lowdb": "^0.13.1"
   },
   "devDependencies": {
     "ava": "^0.16.0",
