@@ -3,3 +3,4 @@ npm-debug.log
 .DS_Store
 *.swp
 config/db.json
+lib/schema/ddl.json
