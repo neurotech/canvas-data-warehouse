@@ -11,7 +11,7 @@ var defaults = {
   },
   db: {
     host: process.env.CD_PG_HOST,
-    port: parseInt(process.env.CD_PG_PORT, 8),
+    port: process.env.CD_PG_PORT,
     user: process.env.CD_PG_USER,
     password: process.env.CD_PG_PASSWORD,
     setup: false,
