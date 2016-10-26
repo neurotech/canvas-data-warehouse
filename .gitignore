@@ -4,3 +4,5 @@ npm-debug.log
 *.swp
 config/db.json
 lib/schema/ddl.json
+lib/tables/registry.json
+tmp/*
