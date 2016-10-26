@@ -19,14 +19,10 @@ var defaults = {
   }
 };
 
-config.init = function () {
-  if (Object.keys(store.getState()).length < Object.keys(defaults).length) {
-    store.defaults(defaults).value();
-    console.log('Initialised config store.');
-  } else {
-    console.log('Config store exists! Skipping initialisation.');
-  }
-};
+// If config is empty, initialise it with defaults
+if (Object.keys(store.getState()).length < Object.keys(defaults).length) {
+  store.defaults(defaults).value();
+}
 
 config.get = function (key) {
   return store.get(key).value();
