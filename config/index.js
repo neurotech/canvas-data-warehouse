@@ -22,6 +22,7 @@ var defaults = {
 // If config is empty, initialise it with defaults
 if (Object.keys(store.getState()).length < Object.keys(defaults).length) {
   store.defaults(defaults).value();
+  console.log('Config defaults set.');
 }
 
 config.get = function (key) {
