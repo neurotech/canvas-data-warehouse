@@ -38,13 +38,12 @@ function checkSeed () {
       .then(results => {
         tables.init();
         const diff = require('./lib/tables/diff');
-        const process = require('./lib/tables/process');
+        const seed = require('./lib/tables/seed');
         const manifestItems = results['files'];
         const actions = diff(manifestItems);
-
         const series = function (table) {
           if (table) {
-            process(table, function () {
+            seed(table, function () {
               return series(actions.shift());
             });
           } else {
